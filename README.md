@@ -1,3 +1,51 @@
+# Содержание
+- [Java Fundamentals](#chapter-1-java-fundamentals)
+    - [enums](#enums)
+    - [Вложенные классы](#вложенные-классы)
+    - [Interface members](#interface-members)
+    - [Functional programming](#functional-programming)
+
+- [Annotations](#chapter-2-annotations)
+
+- [Generics and collections](#chapter-3-generics-and-collections)
+    - [Method reference](#method-reference)
+    - [Collections Framework](#collections-framework)
+    - [Сортировка](#сортировка)
+    - [Generics](#generics)
+
+- [Functional programming](#chapter-4-functional-programming)
+    - [Функциональные интерфейсы](#функциональные-интерфейсы)
+    - [Optional](#optional)
+    - [Streams](#streams)
+
+- [Exceptions, assertions and localization](#chapter-5-exceptions-assertions-and-localization)
+    - [Исключения](#исключения)
+    - [Assertions](#assertions)
+    - [Date and Time](#date-and-time)
+    - [Internalization and localization](#internationalization-and-localization)
+
+- [Modular applications](#chapter-6-modular-applications)
+    - [Модули](#модули)
+    - [Сервисы](#сервисы)
+
+- [Concurrency](#chapter-7-concurrency)
+    - [Потоки](#потоки)
+    - [Потокобезопасность](#потокобезопасность)
+
+- [I/O](#chapter-8-io)
+    - [Файлы](#файлы)
+    - [I/O streams](#io-streams)
+    - [Сериализация](#сериализация)
+    - [Вывод данных](#вывод-данных)
+
+- [NIO.2](#chapter-9-nio2)
+    - [Path](#path)
+    - [NIO.2 Files](#nio2-files)
+    - [Stream API](#stream-api)
+
+- [JDBC (empty)](#chapter-10-jdbc)
+- [Security (empty)](#chapter-11-security)
+
 # Chapter 1. Java Fundamentals
 
 ## enums
@@ -299,8 +347,6 @@ e -> {}
 ```
 
 # Chapter 2. Annotations
-
-## Аннотации
 
 - аннотация - это форма метаданных, добавляемых в код, но не являющаяся частью программы. Аннотации похожи на интерфейс, однако могут применяться к классам, к методам, к выражениям, к другим аннотациям. 
 
@@ -1426,6 +1472,8 @@ System.out.println(props.getProperty("non-existing2", "defaultValue")); // defau
 - только метод ```getProperty()``` позволяет передавать значение по умолчанию. ```Properties``` наследует ```Map<Object, Object>```, однако не рекомендуется вызывать ```get()```/```put()``` у ```Properties```.
 
 # Chapter 6. Modular Applications
+
+## Модули
 
 - существует несколько типов модулей:
     - named
